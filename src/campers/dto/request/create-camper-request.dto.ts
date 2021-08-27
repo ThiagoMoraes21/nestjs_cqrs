@@ -1,5 +1,5 @@
 export class CreateCamperRequest {
-  name: string;
-  age: number;
-  allergies: string[];
+    name: string;
+    age: number;
+    allergies: string[];
 }

@@ -1,3 +1,3 @@
 export class UpdateCamperAllergiesRequest {
-  allergies: string[];
+    allergies: string[];
 }

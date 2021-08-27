@@ -4,22 +4,22 @@ import { UpdateCamperAllergiesRequest } from './dto/request/update-camper-allerg
 
 @Controller('campers')
 export class CampersController {
-  constructor() {}
+    constructor() { }
 
-  @Get(':id')
-  async getCamper(@Param('id') camperId: string): Promise<void> {}
+    @Get(':id')
+    async getCamper(@Param('id') camperId: string): Promise<void> { }
 
-  @Get()
-  async getCampers(): Promise<void> {}
+    @Get()
+    async getCampers(): Promise<void> { }
 
-  @Post()
-  async createCamper(
-    @Body() createCamperRequest: CreateCamperRequest,
-  ): Promise<void> {}
+    @Post()
+    async createCamper(
+        @Body() createCamperRequest: CreateCamperRequest,
+    ): Promise<void> { }
 
-  @Patch(':id')
-  async updateCamperAllergies(
-    @Param('id') camperId: string,
-    @Body() updateCamperAllergiesRequest: UpdateCamperAllergiesRequest,
-  ): Promise<void> {}
+    @Patch(':id')
+    async updateCamperAllergies(
+        @Param('id') camperId: string,
+        @Body() updateCamperAllergiesRequest: UpdateCamperAllergiesRequest,
+    ): Promise<void> { }
 }
